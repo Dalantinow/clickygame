@@ -44,5 +44,10 @@
     "id": 9,
     "name": "Pluto",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Pluto_in_True_Color_-_High-Res.jpg/220px-Pluto_in_True_Color_-_High-Res.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Sun",
+    "image": "https://pbs.twimg.com/profile_images/641353910561566720/VSxsyxs7.jpg"
   }
 ]

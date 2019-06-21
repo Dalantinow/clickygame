@@ -11,6 +11,10 @@
 strong {
   text-align: center
 }
+img {
+  height: 200px;
+  width: 200px
+}
 .card > .img-container {
   height: 60%;
   overflow: hidden;

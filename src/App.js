@@ -34,26 +34,29 @@ class App extends Component {
     points: 0
   };
 
-  
+
 
   addScore = id => {
-    const planets = this.state.planets.filter(planet => planet.id !== id);
-    let points = this.state.points
-    points++
-    shuffle(planets)
-    this.setState({ points })
-    this.setState({ planets })
-    console.log(points)
+  // Trying to check id vs previously clicked ids
+    let points = this.state.points;
+    points++;
+    shuffle(planets);
+    this.setState({ points });
+    this.setState({ planets });
+    console.log(points);
+    
   };
 
-  
+
   render() {
     return (
-      
+
       <Wrapper>
-        <Score points = {this.state.points}>
+        <Score>
+          {this.state.points}
         </Score>
         <Title>SOLAR SYSTEM</Title>
+
         {shuffle(this.state.planets).map(planet => (
           <PlanetPic
             addScore={this.addScore}
@@ -63,6 +66,7 @@ class App extends Component {
             image={planet.image}
           />
         ))}
+       
       </Wrapper>
     );
   }
