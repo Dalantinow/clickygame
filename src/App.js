@@ -4,7 +4,9 @@ import Wrapper from "./components/Wrapper";
 import Title from "./components/Title";
 import planets from "./planets.json";
 import Score from "./components/Score"
+
 console.log(planets)
+
 function shuffle(array) {
   var currentIndex = array.length, temporaryValue, randomIndex;
 
@@ -38,8 +40,9 @@ class App extends Component {
     const planets = this.state.planets.filter(planet => planet.id !== id);
     let points = this.state.points
     points++
+    shuffle(planets)
     this.setState({ points })
-    this.setState({planets})
+    this.setState({ planets })
     console.log(points)
   };
 
