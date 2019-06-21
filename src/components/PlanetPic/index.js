@@ -4,9 +4,9 @@ import "./style.css";
 
 function PlanetPic(props) {
   return (
-    <div className="card">
+    <div onClick={() => props.addScore(props.id)} className="card">
       <div className="img-container">
-        <img onClick={() => props.addScore(props.id)} alt={props.name} src={props.image} />
+        <img alt={props.name} src={props.image} />
       </div>
       <div className="content">
         <ul>
