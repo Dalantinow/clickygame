@@ -2,52 +2,61 @@
   {
     "id": 1,
     "name": "Mercury",
-    "image": "https://s3.amazonaws.com/cms.ipressroom.com/173/files/20146/53d0396e299b5059f6001964_Mercury+%28enhanced+color+image%2C+based+on+MESSENGER+measurements%2C+credit+NASA%29/Mercury+%28enhanced+color+image%2C+based+on+MESSENGER+measurements%2C+credit+NASA%29_1875e677-1471-4a45-ae88-e650fbd5d07a-prv.jpg"
-   
+    "image": "https://s3.amazonaws.com/cms.ipressroom.com/173/files/20146/53d0396e299b5059f6001964_Mercury+%28enhanced+color+image%2C+based+on+MESSENGER+measurements%2C+credit+NASA%29/Mercury+%28enhanced+color+image%2C+based+on+MESSENGER+measurements%2C+credit+NASA%29_1875e677-1471-4a45-ae88-e650fbd5d07a-prv.jpg",
+    "clicked": false
   },
   {
     "id": 2,
     "name": "Venus",
-    "image": "https://www.universetoday.com/wp-content/uploads/2008/10/Venus-580x580.jpg"
+    "image": "https://www.universetoday.com/wp-content/uploads/2008/10/Venus-580x580.jpg",
+    "clicked": false
   },
   {
     "id": 3,
     "name": "Earth",
-    "image": "https://www.universetoday.com/wp-content/uploads/2010/02/Full-Earth-from-Apollo-17-e1448393029514-580x482.jpg"
+    "image": "https://www.universetoday.com/wp-content/uploads/2010/02/Full-Earth-from-Apollo-17-e1448393029514-580x482.jpg",
+    "clicked": false
   },
   {
     "id": 4,
     "name": "Mars",
     "image": "https://www.universetoday.com/wp-content/uploads/2011/12/mars-viking-zoom-580x580.jpg"
+    ,"clicked": false
   },
   {
     "id": 5,
     "name": "Jupiter",
     "image": "https://www.universetoday.com/wp-content/uploads/2013/02/Jupiter-New-Horizons-580x435.jpg"
-  },
+  
+    ,"clicked": false},
   {
     "id": 6,
     "name": "Saturn",
     "image": "https://www.universetoday.com/wp-content/uploads/2015/01/Saturn-RGB-3-28-14-580x580.jpg"
+    ,"clicked": false
   },
   {
     "id": 7,
     "name": "Uranus",
     "image": "https://www.universetoday.com/wp-content/uploads/2015/08/Uranus_as_seen_by_NASAs_Voyager_2.tif-580x580.jpg"
+    ,"clicked": false
   },
   {
     "id": 8,
     "name": "Neptune",
     "image": "https://www.universetoday.com/wp-content/uploads/2011/07/HubbleNeptune-580x571.jpg"
+    ,"clicked": false
   },
   {
     "id": 9,
     "name": "Pluto",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Pluto_in_True_Color_-_High-Res.jpg/220px-Pluto_in_True_Color_-_High-Res.jpg"
+    ,"clicked": false
   },
   {
     "id": 10,
     "name": "Sun",
     "image": "https://pbs.twimg.com/profile_images/641353910561566720/VSxsyxs7.jpg"
+    ,"clicked": false
   }
 ]

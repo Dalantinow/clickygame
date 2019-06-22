@@ -31,19 +31,41 @@ class App extends Component {
 
   state = {
     planets,
-    points: 0
+    points: 0,
   };
 
-
+  // restartPage = (called) => {
+  //   shuffle(planets);
+  //   const called = friend.id
+  //   if (called = )
+  // }
 
   addScore = id => {
   // Trying to check id vs previously clicked ids
-    let points = this.state.points;
-    points++;
-    shuffle(planets);
-    this.setState({ points });
-    this.setState({ planets });
-    console.log(points);
+  console.log(planets[id - 1].id)
+    if (planets[id - 1].clicked === true) {
+      alert("you lose")
+      let points = this.state.points;
+      points = 0;
+      shuffle(planets);
+      this.setState({ points });
+      this.setState({ planets });
+      window.location.reload();
+      }
+      else {
+        let points = this.state.points;
+        points++;
+        planets[id - 1].clicked = true;
+        shuffle(planets);
+        this.setState({ points });
+        this.setState({ planets });
+        
+       
+      
+    
+  
+    
+    }
     
   };
 
