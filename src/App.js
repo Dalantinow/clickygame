@@ -41,8 +41,8 @@ class App extends Component {
   // }
 
   addScore = id => {
-  // Trying to check id vs previously clicked ids
-  console.log(planets[id - 1].id)
+    // Trying to check id vs previously clicked ids
+    console.log(planets[id - 1].id)
     if (planets[id - 1].clicked === true) {
       alert("you lose")
       let points = this.state.points;
@@ -51,22 +51,16 @@ class App extends Component {
       this.setState({ points });
       this.setState({ planets });
       window.location.reload();
-      }
-      else {
-        let points = this.state.points;
-        points++;
-        planets[id - 1].clicked = true;
-        shuffle(planets);
-        this.setState({ points });
-        this.setState({ planets });
-        
-       
-      
-    
-  
-    
     }
-    
+    else {
+      let points = this.state.points;
+      points++;
+      planets[id - 1].clicked = true;
+      shuffle(planets);
+      this.setState({ points });
+      this.setState({ planets });
+    }
+
   };
 
 
@@ -77,7 +71,10 @@ class App extends Component {
         <Score>
           {this.state.points}
         </Score>
-        <Title>SOLAR SYSTEM</Title>
+        <Title>SOLAR SYSTEM
+          <h2>Click the astrological bodies to increase your score!</h2>
+          <h2>Be careful not to click the same one twice!</h2>
+        </Title>
 
         {shuffle(this.state.planets).map(planet => (
           <PlanetPic
@@ -88,7 +85,7 @@ class App extends Component {
             image={planet.image}
           />
         ))}
-       
+
       </Wrapper>
     );
   }
